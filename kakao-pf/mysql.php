@@ -5,4 +5,6 @@
   $mysql['password'] = "yourpassword";
   $mysql['dbname'] = "yourdatabase";
   $mysql['charset'] = "utf8";
+  $table['meal'] = "meal";
+  $table['homework'] = "homework";
 ?>
