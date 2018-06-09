@@ -1,8 +1,11 @@
 <?php
+  //특수 명령어 핸들링 담당
+
+  //특수 명령어 처리 함수
   function commandline($data, $content)
   {
-    include "mysql.php";
-    if(mb_substr( $content, 0, 5 ) === "!숙제등록") {
+    include "mysql.php"; //mysql 인증 파일을 불러옵니다
+    if(mb_substr( $content, 0, 5 ) === "!숙제등록") { //메세지의 시작이 !숙제등록이라면
       //respond("숙제등록이 핸들링 되었습니다.");
       $splits = explode(" ",$content);
       if (!isset($splits[1]) || !isset($splits[2])) {

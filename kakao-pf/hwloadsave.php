@@ -1,4 +1,5 @@
 <?php
+  //숙제 불러오는 담당 코드
   function loadhwlist()
   {
     $array = unserialize(file_get_contents('hwlist.bin'));

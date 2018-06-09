@@ -1,4 +1,5 @@
 <?php
+  //급식 정보 불러오기 및 급식 정보 저장
   function getmeal($type)
   {
     include "mysql.php";
